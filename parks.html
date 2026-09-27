@@ -1,215 +1,460 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>National Parks of Kazakhstan</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>National Parks - Wildlife of Kazakhstan</title>
+
+<!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 
 <body>
 
 <div class="page-layout">
 
-<header>
-    <h1>National Parks of Kazakhstan</h1>
+<!-- Header -->
 
-    <nav class="nav-menu">
-        <a href="index.html">Home</a>
-        <a href="animals.html">Animals</a>
-        <a href="parks.html">National Parks</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+    <header>
 
-<aside>
-    <h3>Explore</h3>
+        <h1>National Parks of Kazakhstan</h1>
 
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="animals.html">Animals</a></li>
-        <li><a href="parks.html">National Parks</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</aside>
+<!-- New Navbar -->
 
-<main>
+        <nav class="navbar navbar-expand-lg navbar-dark">
 
-    <section class="page-intro">
+            <div class="container-fluid">
 
-        <h2>Beautiful Places of Kazakhstan</h2>
+                <a class="navbar-brand"
+                   href="index.html">
 
-        <p>
-            Kazakhstan has many national parks with different landscapes
-            and wildlife. These places help protect nature and rare animals.
-        </p>
+                    Wildlife KZ
 
-    </section>
+                </a>
 
-    <section class="park-info">
 
-        <h2>Charyn National Park</h2>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mainNavbar"
+                        aria-controls="mainNavbar"
+                        aria-expanded="false"
+                        aria-label="Open navigation">
 
-        <img class="round-img" src="images/charyn.jpg" alt="Charyn Canyon in Kazakhstan">
+                    <span class="navbar-toggler-icon"></span>
 
-        <h3>About the Park</h3>
+                </button>
 
-        <p>
-            Charyn National Park is located in the southeastern part
-            of Kazakhstan. It is especially famous for the Charyn Canyon.
-        </p>
 
-        <p>
-            The park has unusual rocks, mountains and other beautiful
-            natural landscapes.
-        </p>
+                <div class="collapse navbar-collapse"
+                     id="mainNavbar">
 
-        <h3>Interesting Places</h3>
+                    <div class="nav-menu navbar-nav ms-auto">
 
-        <ul>
-            <li>Charyn Canyon</li>
-            <li>Red rock formations</li>
-            <li>Mountain landscapes</li>
-            <li>Natural valleys</li>
-        </ul>
+                        <a class="nav-link"
+                           href="index.html">
 
-    </section>
+                            Home
 
-    <section class="park-info">
+                        </a>
 
-        <h2>Altyn-Emel National Park</h2>
 
-        <img class="round-img" src="images/altyn-emel.jpg" alt="Landscape of Altyn-Emel National Park">
+                        <a class="nav-link"
+                           href="animals.html">
 
-        <h3>About the Park</h3>
+                            Animals
 
-        <p>
-            Altyn-Emel National Park is a large protected area
-            in southeastern Kazakhstan.
-        </p>
+                        </a>
 
-        <p>
-            The park is known for its deserts, mountains and
-            different species of wild animals.
-        </p>
 
-        <h3>What Can Be Found There?</h3>
+                        <a class="nav-link active"
+                           href="parks.html"
+                           aria-current="page">
 
-        <ul>
-            <li>Wild animals</li>
-            <li>Desert landscapes</li>
-            <li>Mountains</li>
-            <li>Unique natural places</li>
-        </ul>
+                            National Parks
 
-    </section>
+                        </a>
 
-    <section class="park-info">
 
-        <h2>Why Protect National Parks?</h2>
+                        <a class="nav-link"
+                           href="contact.html">
 
-        <p>
-            National parks are important because they give animals
-            a safe place to live and protect natural environments.
-        </p>
+                            Contact
 
-        <ol>
-            <li>Protect animals and plants.</li>
-            <li>Save natural landscapes.</li>
-            <li>Protect rare species.</li>
-            <li>Support ecological tourism.</li>
-            <li>Help people learn about nature.</li>
-        </ol>
+                        </a>
 
-    </section>
+                    </div>
 
-    <section>
+                </div>
 
-        <h2>Natural Areas in Kazakhstan</h2>
+            </div>
 
-        <h3>Main Types of Nature</h3>
+        </nav>
+
+    </header>
+
+<!-- Sidebar -->
+
+    <aside>
+
+        <h3>Explore</h3>
 
         <ul>
-            <li>Mountains</li>
-            <li>Steppes</li>
-            <li>Deserts</li>
-            <li>Forests</li>
-            <li>Canyons</li>
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="animals.html">Animals</a>
+            </li>
+
+            <li>
+                <a href="parks.html">National Parks</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
         </ul>
 
+    </aside>
+
+<!-- Main -->
+
+    <main class="m-0 p-3 p-md-4">
+
+<!-- Bootstrap Spacing -->
+
+        <section class="page-intro p-3 p-md-4 mb-4">
+
+            <h2>National Parks of Kazakhstan</h2>
+
+            <p>
+                Kazakhstan has many beautiful national parks.
+                They protect animals, plants and natural landscapes.
+            </p>
+
+            <img src="images/kazakhstan-nature.jpg"
+                 alt="Beautiful nature of Kazakhstan">
+
+        </section>
+
+<!-- Bootstrap Grid -->
+
+        <section class="p-3 p-md-4 mb-4">
+
+            <h2>Famous National Parks</h2>
+
+
+            <div class="row g-4">
+
+<!-- Charyn -->
+
+                <div class="col-12 col-lg-6">
+
+                    <article class="park-info h-100 p-3">
+
+                        <img src="images/charyn.jpg"
+                             class="round-img"
+                             alt="Charyn Canyon National Park">
+
+                        <h3>Charyn National Park</h3>
+
+                        <p>
+                            Charyn National Park is famous for
+                            the Charyn Canyon and its beautiful
+                            natural landscapes.
+                        </p>
+
+                        <p>
+                            The park is located in the southeast
+                            of Kazakhstan.
+                        </p>
+
+                        <!-- Bootstrap Button -->
+
+                        <a href="contact.html"
+                           class="btn btn-success">
+
+                            Learn More
+
+                        </a>
+
+                    </article>
+
+                </div>
+
+<!-- Altyn Emel -->
+
+                <div class="col-12 col-lg-6">
+
+                    <article class="park-info h-100 p-3">
+
+                        <img src="images/altyn-emel.jpg"
+                             class="round-img"
+                             alt="Altyn-Emel National Park">
+
+                        <h3>Altyn-Emel National Park</h3>
+
+                        <p>
+                            Altyn-Emel is one of the largest
+                            national parks in Kazakhstan.
+                        </p>
+
+                        <p>
+                            It is known for its desert landscapes,
+                            mountains and the Singing Dune.
+                        </p>
+
+                        <!-- Bootstrap Button -->
+
+                        <a href="contact.html"
+                           class="btn btn-success">
+
+                            Learn More
+
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+<!-- Bootstrap Grid -->
+
+        <section class="p-3 p-md-4 mb-4">
+
+            <h2>Natural Areas</h2>
+
+            <div class="row g-4">
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="p-3 bg-light rounded h-100">
+
+                        <h3>Mountains</h3>
+
+                        <p>
+                            Mountain areas provide habitats
+                            for many plants and animals.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="p-3 bg-light rounded h-100">
+
+                        <h3>Deserts</h3>
+
+                        <p>
+                            Desert landscapes are home to
+                            specially adapted animals and plants.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="p-3 bg-light rounded h-100">
+
+                        <h3>Steppes</h3>
+
+                        <p>
+                            The steppe is one of the main
+                            natural regions of Kazakhstan.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+<!-- Gallery -->
+
+        <section class="p-3 p-md-4 mb-4">
+
+            <h2>National Parks Gallery</h2>
+
+            <p>
+                Some beautiful places and landscapes of Kazakhstan.
+            </p>
+
+
+            <div class="gallery">
+
+
+                <div class="gallery-item">
+
+                    <img src="images/charyn.jpg"
+                         alt="Charyn Canyon">
+
+                    <p>Charyn Canyon</p>
+
+                </div>
+
+
+                <div class="gallery-item">
+
+                    <img src="images/altyn-emel.jpg"
+                         alt="Altyn-Emel National Park">
+
+                    <p>Altyn-Emel</p>
+
+                </div>
+
+
+                <div class="gallery-item">
+
+                    <img src="images/kazakhstan-nature.jpg"
+                         alt="Nature of Kazakhstan">
+
+                    <p>Kazakhstan Nature</p>
+
+                </div>
+
+
+                <div class="gallery-item">
+
+                    <img src="images/burabay.jpg"
+                         alt="Burabay National Park">
+
+                    <p>Burabay</p>
+
+                </div>
+
+
+                <div class="gallery-item">
+
+                    <img src="images/ile-alatau.jpg"
+                         alt="Ile-Alatau National Park">
+
+                    <p>Ile-Alatau</p>
+
+                </div>
+
+
+                <div class="gallery-item">
+
+                    <img src="images/kaindy.jpg"
+                         alt="Kaindy Lake">
+
+                    <p>Kaindy Lake</p>
+
+                </div>
+
+
+                <div class="gallery-item">
+
+                    <img src="images/steppe.jpg"
+                         alt="Kazakhstan steppe">
+
+                    <p>Kazakhstan Steppe</p>
+
+                </div>
+
+
+                <div class="gallery-item">
+
+                    <img src="images/tamgaly.jpg"
+                         alt="Tamgaly landscape">
+
+                    <p>Tamgaly</p>
+
+                </div>
+
+
+                <div class="gallery-item">
+
+                    <img src="images/aksu-zhabagly.jpg"
+                         alt="Aksu-Zhabagly nature">
+
+                    <p>Aksu-Zhabagly</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+<!-- Why Protect -->
+
+        <section class="p-3 p-md-4 mb-4">
+
+            <h2>Why Protect National Parks?</h2>
+
+            <ol>
+
+                <li>
+                    National parks protect natural habitats.
+                </li>
+
+                <li>
+                    They help protect endangered animals.
+                </li>
+
+                <li>
+                    They preserve beautiful landscapes.
+                </li>
+
+                <li>
+                    They are important for education and tourism.
+                </li>
+
+            </ol>
+
+        </section>
+
+
+    </main>
+
+<!-- Footer -->
+
+    <footer>
+
         <p>
-            Every natural area has its own plants and animals.
-            This makes Kazakhstan's wildlife very diverse.
+            Team members: Daniil Kharchenko, Muhammed Utemisov
         </p>
 
-    </section>
+    </footer>
 
-    <section>
-
-        <h2>National Parks Gallery</h2>
-
-    <div class="gallery">
-
-        <div class="gallery-item">
-            <img src="images/charyn.jpg" alt="Charyn Canyon">
-            <p>Charyn Canyon</p>
-        </div>
-
-        <div class="gallery-item">
-            <img src="images/altyn-emel.jpg" alt="Altyn-Emel National Park">
-            <p>Altyn-Emel</p>
-        </div>
-
-        <div class="gallery-item">
-            <img src="images/burabay.jpg" alt="Burabay National Park">
-            <p>Burabay</p>
-        </div>
-
-        <div class="gallery-item">
-            <img src="images/ile-alatau.jpg" alt="Ile-Alatau National Park">
-            <p>Ile-Alatau</p>
-        </div>
-
-        <div class="gallery-item">
-            <img src="images/kaindy.jpg" alt="Kaindy Lake">
-            <p>Kaindy Lake</p>
-        </div>
-
-        <div class="gallery-item">
-            <img src="images/kazakhstan-nature.jpg" alt="Kolsai Lakes in Kazakhstan">
-            <p>Kolsai Lakes</p>
-        </div>
-
-        <div class="gallery-item">
-            <img src="images/steppe.jpg" alt="Kazakhstan Steppe">
-            <p>Kazakhstan Steppe</p>
-        </div>
-
-        <div class="gallery-item">
-            <img src="images/tamgaly.jpg" alt="Tamgaly Petroglyphs">
-            <p>Tamgaly</p>
-        </div>
-
-        <div class="gallery-item">
-            <img src="images/aksu-zhabagly.jpg" alt="Aksu-Zhabagly Nature Reserve">
-            <p>Aksu-Zhabagly</p>
-        </div>
-
-    </div>
-
-    </section>
-
-</main>
-
-<footer>
-    <p>Team members: Muhammed Utemisov, Daniil Kharchenko</p>
-</footer>
 
 </div>
 
+<!-- Bootstrap JavaScript -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
 </body>
+
 </html>

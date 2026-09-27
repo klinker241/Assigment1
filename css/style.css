@@ -1,231 +1,66 @@
 body {
     margin: 0;
     padding: 0;
+
     font-family: Arial, sans-serif;
+
     background-color: #eef3e8;
     color: #263b2a;
+
     line-height: 1.6;
 }
 
-/* Header */
+
+/* =========================
+   HEADER
+   ========================= */
+
 header {
     background-color: #24452d;
     padding: 20px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-h1 {
+header h1 {
     color: white;
     font-size: 36px;
-}
-
-h2 {
-    color: #315c3a;
-}
-
-.page-layout header h1 {
     margin: 0;
 }
 
-/* Navigation */
-.nav-menu {
-    display: flex;
-    justify-content: flex-end;
-    gap: 25px;
-}
 
-.nav-menu a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-}
+/* =========================
+   BOOTSTRAP NAVBAR
+   ========================= */
 
-.nav-menu a:hover {
-    background-color: #4f7955;
-    border-radius: 5px;
-}
-
-/* Main */
-main {
-    width: 80%;
-    margin: 30px auto;
-}
-
-section {
-    background-color: white;
-    margin-bottom: 25px;
-    padding: 25px;
-    border: 1px solid #c5d2c3;
-    border-radius: 10px;
-}
-
-/* Footer */
-footer {
+header .navbar {
     background-color: #24452d;
-    color: white;
-    text-align: center;
-    padding: 15px;
 }
 
-/* Images */
-section img {
-    width: 400px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-/* Table */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-table th,
-table td {
-    border: 1px solid #9caf9a;
-    padding: 12px;
-    text-align: left;
-}
-
-table th {
-    background-color: #315c3a;
+header .navbar-brand,
+header .nav-link {
     color: white;
 }
 
-/* Contact form */
-#contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-#contact-form input,
-#contact-form select,
-#contact-form textarea {
-    padding: 10px;
-    border: 1px solid #9caf9a;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-#contact-form input:focus,
-#contact-form select:focus,
-#contact-form textarea:focus {
-    outline: 2px solid #315c3a;
-}
-
-#contact-form button {
-    padding: 12px;
-    background-color: #315c3a;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#contact-form button:hover {
+header .nav-link:hover {
     background-color: #4f7955;
-}
-
-/* Round images */
-.round-img {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-/* Page intro */
-.page-intro {
-    text-align: center;
-}
-
-.page-intro img {
-    max-width: 100%;
-}
-
-/* Parks */
-.park-info {
-    background-color: white;
-}
-
-.park-info h3 {
-    color: #315c3a;
-}
-
-/* Contact */
-.contact-intro {
-    text-align: center;
-}
-
-.contact-intro img {
-    max-width: 100%;
-}
-
-.team-member {
-    background-color: #f8faf6;
-}
-
-/* Cards - Flexbox */
-.cards {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    align-items: stretch;
-}
-
-.card {
-    flex: 1;
-    min-width: 200px;
-    padding: 15px;
-    border: 1px solid #c5d2c3;
-    border-radius: 10px;
-    background-color: #f8faf6;
-
-    display: flex;
-    flex-direction: column;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.card .button {
-    margin-top: auto;
-}
-
-.card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-/* Buttons */
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #315c3a;
-    color: white;
-    text-decoration: none;
     border-radius: 5px;
 }
 
-.button:hover {
-    background-color: #4f7955;
-}
 
-/* Grid Page Layout */
+/* =========================
+   PAGE LAYOUT
+   ========================= */
+
 .page-layout {
     display: grid;
+
     grid-template-columns: 200px 1fr;
-    grid-template-rows: auto 1fr auto;
+
+    grid-template-rows:
+        auto 1fr auto;
 
     grid-template-areas:
         "header header"
@@ -245,6 +80,7 @@ table th {
 
 .page-layout main {
     grid-area: main;
+
     width: auto;
     margin: 30px;
 }
@@ -253,7 +89,11 @@ table th {
     grid-area: footer;
 }
 
-/* Sidebar */
+
+/* =========================
+   SIDEBAR
+   ========================= */
+
 .page-layout aside {
     padding: 20px;
     background-color: #dce8d9;
@@ -268,36 +108,179 @@ table th {
     text-decoration: underline;
 }
 
-/* Gallery - CSS Grid */
+
+/* =========================
+   SECTIONS
+   ========================= */
+
+section {
+    background-color: white;
+
+    margin-bottom: 25px;
+    padding: 25px;
+
+    border: 1px solid #c5d2c3;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #315c3a;
+}
+
+
+/* =========================
+   IMAGES
+   ========================= */
+
+section img {
+    width: 400px;
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+.page-intro {
+    text-align: center;
+}
+
+.page-intro img,
+.contact-intro img {
+    max-width: 100%;
+}
+
+
+/* =========================
+   CARDS
+   ========================= */
+
+.cards {
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    align-items: stretch;
+}
+
+.cards .card {
+    flex: 1;
+    min-width: 200px;
+
+    transition: 0.3s;
+}
+
+.cards .card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   TABLE
+   ========================= */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    border: 1px solid #9caf9a;
+
+    padding: 12px;
+
+    text-align: left;
+}
+
+table th {
+    background-color: #315c3a;
+    color: white;
+}
+
+
+/* =========================
+   PARKS
+   ========================= */
+
+.park-info {
+    background-color: white;
+}
+
+.park-info h3 {
+    color: #315c3a;
+}
+
+.round-img {
+    width: 400px;
+    height: 400px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   GALLERY
+   ========================= */
+
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
     gap: 20px;
 }
 
 .gallery-item {
     position: relative;
+
     overflow: hidden;
 }
 
 .gallery-item img {
     width: 100%;
     height: 220px;
+
     object-fit: cover;
+
     display: block;
 }
 
 .gallery-item p {
     position: absolute;
+
     bottom: 0;
     left: 0;
     right: 0;
 
     margin: 0;
+
     padding: 10px;
 
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color:
+        rgba(0, 0, 0, 0.7);
+
     color: white;
+
     text-align: center;
 
     opacity: 0;
@@ -307,12 +290,68 @@ table th {
     opacity: 1;
 }
 
-/* Responsive Design */
+
+/* =========================
+   BOOTSTRAP CAROUSEL
+   ========================= */
+
+.carousel-image {
+    height: 450px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+
+/* =========================
+   CONTACT
+   ========================= */
+
+.contact-intro {
+    text-align: center;
+}
+
+.team-member {
+    background-color: #f8faf6;
+}
+
+
+/* =========================
+   MEDIA QUERIES
+   TASK 1 + TASK 2
+   ========================= */
+
+/* Tablet */
+
+@media (min-width: 577px)
+       and (max-width: 992px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    body {
+        font-size: 15px;
+    }
+
+    .cards .card {
+        flex: 1 1 calc(50% - 10px);
+    }
+
+}
+
+
+/* Mobile */
+
 @media (max-width: 768px) {
 
     .page-layout {
+
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto 1fr auto;
+
+        grid-template-rows:
+            auto auto 1fr auto;
 
         grid-template-areas:
             "header"
@@ -321,32 +360,66 @@ table th {
             "footer";
     }
 
-    .page-layout header {
+
+    header {
         flex-direction: column;
+
         gap: 15px;
+
         text-align: center;
     }
 
-    .nav-menu {
-        justify-content: center;
-        flex-wrap: wrap;
+
+    header h1 {
+        font-size: 24px;
     }
+
 
     .page-layout main {
         width: auto;
+
         margin: 15px;
     }
+
 
     .cards {
         flex-direction: column;
     }
 
+
     .gallery {
         grid-template-columns: 1fr;
     }
 
+
     section img {
         max-width: 100%;
+
         height: auto;
     }
+
+
+    .round-img {
+        width: 100%;
+        height: auto;
+
+        border-radius: 10px;
+    }
+
+
+    .carousel-image {
+        height: 280px;
+    }
+
+}
+
+
+/* Desktop */
+
+@media (min-width: 993px) {
+
+    body {
+        font-size: 16px;
+    }
+
 }

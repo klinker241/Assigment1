@@ -7,193 +7,362 @@
 
     <title>Animals - Wildlife of Kazakhstan</title>
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Animals of Kazakhstan</h1>
+<div class="page-layout">
 
-    <nav class="nav-menu">
-        <a href="index.html">Home</a>
-        <a href="animals.html">Animals</a>
-        <a href="parks.html">National Parks</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+    <header>
 
-<main>
+        <h1>Animals of Kazakhstan</h1>
 
-    <section class="page-intro">
+        <!-- Bootstrap Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
 
-        <h2>Wild Animals of Kazakhstan</h2>
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="index.html">
+                    Wildlife KZ
+                </a>
+
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mainNavbar"
+                        aria-controls="mainNavbar"
+                        aria-expanded="false"
+                        aria-label="Open navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse"
+                     id="mainNavbar">
+
+                    <div class="nav-menu navbar-nav ms-auto">
+
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+
+                        <a class="nav-link active"
+                           href="animals.html"
+                           aria-current="page">
+                            Animals
+                        </a>
+
+                        <a class="nav-link" href="parks.html">
+                            National Parks
+                        </a>
+
+                        <a class="nav-link" href="contact.html">
+                            Contact
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="page-intro p-3 p-md-4">
+
+            <h2>Wild Animals of Kazakhstan</h2>
+
+            <p>
+                Kazakhstan is home to many different species of animals.
+                They live in mountains, steppes, deserts and forests.
+            </p>
+
+            <img src="images/eagle.jpg"
+                 alt="Golden eagle flying over the landscape">
+
+        </section>
+
+
+        <section>
+
+            <h2>Featured Animals</h2>
+
+            <!-- Bootstrap Grid -->
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <article class="card h-100">
+
+                        <img src="images/snow-leopard.jpg"
+                             class="card-img-top"
+                             alt="Snow leopard in the mountains">
+
+                        <div class="card-body d-flex flex-column">
+
+                            <h3 class="card-title">
+                                Snow Leopard
+                            </h3>
+
+                            <p class="card-text">
+                                The snow leopard is a rare predator
+                                that lives in the mountains of Kazakhstan.
+                            </p>
+
+                            <p>
+                                <strong>Habitat:</strong> Mountains
+                            </p>
+
+                            <p>
+                                <strong>Diet:</strong> Carnivore
+                            </p>
+
+                            <!-- Goes to CONTACT -->
+                            <a href="contact.html"
+                               class="btn btn-success mt-auto">
+                                Learn More
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- Card 2 -->
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <article class="card h-100">
+
+                        <img src="images/saiga.jpg"
+                             class="card-img-top"
+                             alt="Saiga antelope in the steppe">
+
+                        <div class="card-body d-flex flex-column">
+
+                            <h3 class="card-title">
+                                Saiga Antelope
+                            </h3>
+
+                            <p class="card-text">
+                                The saiga antelope is a unique animal
+                                that lives in the steppe.
+                            </p>
+
+                            <p>
+                                <strong>Habitat:</strong> Steppe
+                            </p>
+
+                            <p>
+                                <strong>Diet:</strong> Herbivore
+                            </p>
+
+                            <a href="contact.html"
+                               class="btn btn-success mt-auto">
+                                Learn More
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- Card 3 -->
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <article class="card h-100">
+
+                        <img src="images/wolf.jpg"
+                             class="card-img-top"
+                             alt="Gray wolf in nature">
+
+                        <div class="card-body d-flex flex-column">
+
+                            <h3 class="card-title">
+                                Gray Wolf
+                            </h3>
+
+                            <p class="card-text">
+                                The gray wolf is an important predator
+                                in Kazakhstan's ecosystems.
+                            </p>
+
+                            <p>
+                                <strong>Habitat:</strong>
+                                Steppe and forests
+                            </p>
+
+                            <p>
+                                <strong>Diet:</strong> Carnivore
+                            </p>
+
+                            <a href="contact.html"
+                               class="btn btn-success mt-auto">
+                                Learn More
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- Card 4 -->
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <article class="card h-100">
+
+                        <img src="images/eagle.jpg"
+                             class="card-img-top"
+                             alt="Golden eagle flying">
+
+                        <div class="card-body d-flex flex-column">
+
+                            <h3 class="card-title">
+                                Golden Eagle
+                            </h3>
+
+                            <p class="card-text">
+                                The golden eagle is a powerful bird
+                                of prey found in Kazakhstan.
+                            </p>
+
+                            <p>
+                                <strong>Habitat:</strong>
+                                Mountains and steppe
+                            </p>
+
+                            <p>
+                                <strong>Diet:</strong> Carnivore
+                            </p>
+
+                            <a href="contact.html"
+                               class="btn btn-success mt-auto">
+                                Learn More
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="p-3 p-md-4">
+
+            <h2>Interesting Facts</h2>
+
+            <ol class="mb-0">
+
+                <li>Kazakhstan has a very large territory.</li>
+
+                <li>Different animals live in different habitats.</li>
+
+                <li>The snow leopard lives in mountainous areas.</li>
+
+                <li>Saiga antelopes are adapted to life in the steppe.</li>
+
+                <li>Birds of prey are an important part of ecosystems.</li>
+
+            </ol>
+
+        </section>
+
+
+        <section>
+
+            <h2>Wild Animals Information</h2>
+
+            <div class="table-responsive">
+
+                <table>
+
+                    <thead>
+
+                    <tr>
+                        <th>Animal</th>
+                        <th>Habitat</th>
+                        <th>Diet</th>
+                        <th>Status</th>
+                    </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                    <tr>
+                        <td>Snow Leopard</td>
+                        <td>Mountains</td>
+                        <td>Carnivore</td>
+                        <td>Endangered</td>
+                    </tr>
+
+                    <tr>
+                        <td>Saiga</td>
+                        <td>Steppe</td>
+                        <td>Herbivore</td>
+                        <td>Protected</td>
+                    </tr>
+
+                    <tr>
+                        <td>Wolf</td>
+                        <td>Steppe and forests</td>
+                        <td>Carnivore</td>
+                        <td>Common</td>
+                    </tr>
+
+                    <tr>
+                        <td>Golden Eagle</td>
+                        <td>Mountains and steppe</td>
+                        <td>Carnivore</td>
+                        <td>Protected</td>
+                    </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
 
         <p>
-            Kazakhstan is home to many different species of animals.
-            They live in mountains, steppes, deserts and forests.
+            Team members: Daniil Kharchenko, Muhammed Utemisov
         </p>
 
-        <img src="images/eagle.jpg"
-             alt="Golden eagle flying over the landscape">
+    </footer>
 
-    </section>
-
-
-    <section>
-
-        <h2>Featured Animals</h2>
-
-        <div class="cards">
-
-            <article class="card">
-
-                <img src="images/snow-leopard.jpg"
-                     alt="Snow leopard in the mountains">
-
-                <h3>Snow Leopard</h3>
-
-                <p>
-                    The snow leopard is a rare predator that lives
-                    in the mountains of Kazakhstan.
-                </p>
-
-                <p><strong>Habitat:</strong> Mountains</p>
-
-                <p><strong>Diet:</strong> Carnivore</p>
-                <a href="contact.html" class="button">Learn More</a>
-
-            </article>
+</div>
 
 
-            <article class="card">
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
 
-                <img src="images/saiga.jpg"
-                     alt="Saiga antelope in the steppe">
-
-                <h3>Saiga Antelope</h3>
-
-                <p>
-                    The saiga antelope is a unique animal
-                    that lives in the steppe.
-                </p>
-
-                <p><strong>Habitat:</strong> Steppe</p>
-
-                <p><strong>Diet:</strong> Herbivore</p>
-                <a href="contact.html" class="button">Learn More</a>
-
-            </article>
-
-
-            <article class="card">
-
-                <img src="images/wolf.jpg"
-                     alt="Gray wolf in nature">
-
-                <h3>Gray Wolf</h3>
-
-                <p>
-                    The gray wolf is an important predator
-                    in Kazakhstan's ecosystems.
-                </p>
-
-                <p><strong>Habitat:</strong> Steppe and forests</p>
-
-                <p><strong>Diet:</strong> Carnivore</p>
-                <a href="contact.html" class="button">Learn More</a>
-
-            </article>
-
-
-            <article class="card">
-
-                <img src="images/eagle.jpg"
-                     alt="Golden eagle flying">
-
-                <h3>Golden Eagle</h3>
-
-                <p>
-                    The golden eagle is a powerful bird of prey
-                    found in Kazakhstan.
-                </p>
-
-                <p><strong>Habitat:</strong> Mountains and steppe</p>
-
-                <p><strong>Diet:</strong> Carnivore</p>
-                <a href="contact.html" class="button">Learn More</a>
-
-            </article>
-
-        </div>
-
-    </section>
-
-
-    <section class="facts">
-
-        <h2>Interesting Facts</h2>
-
-        <ol>
-            <li>Kazakhstan has a very large territory.</li>
-            <li>Different animals live in different habitats.</li>
-            <li>The snow leopard lives in mountainous areas.</li>
-            <li>Saiga antelopes are adapted to life in the steppe.</li>
-            <li>Birds of prey are an important part of ecosystems.</li>
-        </ol>
-
-    </section>
-
-
-    <section>
-
-        <h2>Wild Animals Information</h2>
-
-        <table>
-
-            <tr>
-                <th>Animal</th>
-                <th>Habitat</th>
-                <th>Diet</th>
-                <th>Status</th>
-            </tr>
-
-            <tr>
-                <td>Snow Leopard</td>
-                <td>Mountains</td>
-                <td>Carnivore</td>
-                <td>Endangered</td>
-            </tr>
-
-            <tr>
-                <td>Saiga</td>
-                <td>Steppe</td>
-                <td>Herbivore</td>
-                <td>Protected</td>
-            </tr>
-
-            <tr>
-                <td>Wolf</td>
-                <td>Steppe and forests</td>
-                <td>Carnivore</td>
-                <td>Common</td>
-            </tr>
-
-            <tr>
-                <td>Golden Eagle</td>
-                <td>Mountains and steppe</td>
-                <td>Carnivore</td>
-                <td>Protected</td>
-            </tr>
-
-        </table>
-
-    </section>
-
-</main>
-
-<footer>
-    <p>Team members:Daniil Kharchenko,Muhammed Utemisov</p>
-</footer>
 </body>
 </html>
