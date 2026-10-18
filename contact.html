@@ -459,6 +459,77 @@
 
         </section>
 
+<!-- Assignment 4: Popup Contact Form -->
+
+<section class="p-3 p-md-4 mb-4">
+    <h2>Quick Contact</h2>
+
+    <p>Click the button to open a contact form.</p>
+
+    <button type="button"
+            class="btn btn-success"
+            id="open-popup">
+        Contact Us
+    </button>
+</section>
+
+<!-- Popup window -->
+
+<div class="popup-overlay" id="contact-popup" hidden>
+
+    <div class="popup-box">
+
+        <button type="button"
+                class="popup-close"
+                id="close-popup"
+                aria-label="Close popup">
+            &times;
+        </button>
+
+        <h2>Quick Contact Form</h2>
+
+        <form id="popup-form">
+
+            <label for="popup-name" class="form-label">
+                Name
+            </label>
+
+            <input type="text"
+                   id="popup-name"
+                   class="form-control mb-3"
+                   required>
+
+            <label for="popup-email" class="form-label">
+                Email
+            </label>
+
+            <input type="email"
+                   id="popup-email"
+                   class="form-control mb-3"
+                   required>
+
+            <label for="popup-message" class="form-label">
+                Message
+            </label>
+
+            <textarea id="popup-message"
+                      class="form-control mb-3"
+                      rows="3"
+                      required></textarea>
+
+            <button type="submit" class="btn btn-success">
+                Submit
+            </button>
+
+            <p id="popup-status"
+               class="form-message"
+               role="status"></p>
+
+        </form>
+
+    </div>
+
+</div>
 
     </main>
 
@@ -480,6 +551,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
 </script>
 
+<script src="js/script.js"></script>
 
 </body>
 
