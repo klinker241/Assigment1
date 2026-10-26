@@ -1,0 +1,23 @@
+/* Styles for Assignment 5 features from index.html */
+body.theme-night { background:#17231d !important; color:#edf4e9 !important; transition:background .35s,color .35s; }
+      body.theme-night .page-layout, body.theme-night main section, body.theme-night aside { background:#223229 !important; color:#edf4e9 !important; }
+      body.theme-night .card, body.theme-night .bg-light { background:#304438 !important; color:#edf4e9 !important; }
+      .assignment-tools { display:flex; flex-wrap:wrap; gap:.65rem; margin:1rem 0; }
+      .assignment-tools button, .wildlife-extra button { border:0; border-radius:8px; padding:.65rem 1rem; background:#287747; color:white; cursor:pointer; }
+      .assignment-tools button:focus, .wildlife-extra button:focus, .nav-menu a:focus { outline:3px solid #e7b94b; outline-offset:3px; }
+      .js-reveal { padding:1rem; margin-top:.75rem; border-left:4px solid #287747; background:rgba(110,150,95,.12); border-radius:6px; }
+      .wildlife-pop { animation:wildlifePop .45s ease; }
+      @keyframes wildlifePop { from{opacity:.35;transform:translateY(12px)} to{opacity:1;transform:translateY(0)} }
+      #home-clock { font-weight:600; }
+
+/* Styles for Assignment 5 features from animals.html */
+.animal-tools { display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0; }
+      .animal-tools button,.animal-quiz button { border:0;border-radius:8px;padding:.6rem .9rem;background:#287747;color:white;cursor:pointer; }
+      .animal-tools button[aria-pressed="true"] { background:#173d27;box-shadow:0 0 0 3px #e7b94b; }
+      .animal-tools button:focus,.animal-quiz button:focus { outline:3px solid #e7b94b;outline-offset:3px; }
+      .animal-card-filtered { animation:animalAppear .35s ease; }
+      @keyframes animalAppear { from{opacity:.3;transform:scale(.97)} to{opacity:1;transform:scale(1)} }
+      .animal-quiz { margin-top:1.5rem;padding:1rem;border-radius:10px;background:rgba(110,150,95,.13); }
+      .animal-quiz [hidden] { display:none !important; }
+      .animal-quiz label { display:block;margin:.5rem 0; }
+      #animal-quiz-status { min-height:1.5rem;font-weight:600; }

@@ -16,6 +16,7 @@
           rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/assignment5-parks-contact.css">
 
 </head>
 
@@ -459,6 +460,33 @@
 
 </section>
 
+
+        <!-- Assignment 5: Interactive National Parks -->
+        <section id="parks-interactive" class="p-3 p-md-4 mb-4">
+            <h2>Explore National Parks</h2>
+            <p id="park-description">Click the button to discover more about protecting national parks.</p>
+            <button type="button" id="park-read-more" class="btn btn-success" aria-expanded="false">Read More</button>
+            <p id="park-extra" hidden>National parks protect rare species and beautiful landscapes. Visitors should stay on marked trails and never leave rubbish behind.</p>
+            <h3 class="mt-4">Interactive Park Gallery</h3>
+            <p>Choose a park to change the large picture.</p>
+            <img id="park-preview" src="images/charyn.jpg" alt="Charyn Canyon" class="park-preview">
+            <div id="park-thumbnails" class="park-thumbnails">
+                <button type="button" data-image="images/charyn.jpg" data-title="Charyn Canyon" aria-pressed="true">Charyn</button>
+                <button type="button" data-image="images/altyn-emel.jpg" data-title="Altyn-Emel National Park" aria-pressed="false">Altyn-Emel</button>
+                <button type="button" data-image="images/burabay.jpg" data-title="Burabay National Park" aria-pressed="false">Burabay</button>
+            </div>
+            <p id="park-selected" role="status" aria-live="polite">Selected: Charyn Canyon</p>
+            <h3 class="mt-4">Rate the Parks Page</h3>
+            <div id="park-rating" class="park-rating" aria-label="Rate from one to five stars">
+                <button type="button" data-rating="1" aria-label="1 star">☆</button>
+                <button type="button" data-rating="2" aria-label="2 stars">☆</button>
+                <button type="button" data-rating="3" aria-label="3 stars">☆</button>
+                <button type="button" data-rating="4" aria-label="4 stars">☆</button>
+                <button type="button" data-rating="5" aria-label="5 stars">☆</button>
+            </div>
+            <p id="rating-message" role="status" aria-live="polite">No rating selected.</p>
+        </section>
+
     </main>
 
 <!-- Footer -->
@@ -480,6 +508,7 @@
 </script>
 
 <script src="js/script.js"></script>
+<script src="js/assignment5-parks.js"></script>
 
 </body>
 

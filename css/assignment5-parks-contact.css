@@ -1,0 +1,17 @@
+/* Assignment 5: Parks and Contact interactive components */
+#parks-interactive button, #contact-interactive button { cursor: pointer; }
+#park-extra[hidden] { display: none !important; }
+.park-preview { display:block; width:100%; max-width:650px; height:300px; object-fit:cover; border-radius:10px; margin:15px 0; }
+.park-thumbnails { display:flex; gap:10px; flex-wrap:wrap; }
+.park-thumbnails button { border:1px solid #315c3a; border-radius:7px; padding:8px 14px; background:#e4f0df; color:#24452d; }
+.park-thumbnails button[aria-pressed="true"] { background:#315c3a; color:white; }
+.park-rating { display:flex; gap:6px; }
+.park-rating button { font-size:32px; border:0; background:transparent; color:#66776a; }
+.park-rating button.selected { color:#b57a00; }
+.park-animate { animation:parkFade .35s ease; }
+.contact-animate { animation:parkFade .35s ease; }
+@keyframes parkFade { from { opacity:.3; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+#contact-interactive .form-label { display:block; margin-top:12px; }
+#contact-interactive .form-control, #contact-interactive .form-select { max-width:550px; }
+#contact-form-status { font-weight:bold; color:#315c3a; }
+@media(max-width:600px) { .park-preview { height:200px; } }
